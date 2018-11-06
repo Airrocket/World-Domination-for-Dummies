@@ -24,17 +24,23 @@
 
 				.fakeimg {background-color: #aaa; width: 100%; padding: 2%; overflow: hidden; height: 50%;}
 
-				.card {background-color: white; padding: 1.5%; margin-top: 1.5%; margin-left: 1.5%}
+				.card {background-color: white; padding: 1.5%; margin: 1.5%}
 
 				.cardLink {color: black; background-color: white; text-decoration: none;}
 
-				.cardRight {background-color: white; padding: 3.5%; margin-top: 4.8%; margin-right: 4.8%}
+				.cardRight {background-color: white; padding: 3.5%; margin: 4.8%;}
+
+				@media screen and (max-width: 1000px) {.cardRight {padding: 1.5%; margin: 1.5%}}
 
 				.center {background-color: grey;}
 
 				.row:after {content: ""; display: table; clear: both;}
 
-				.footer {background-color: #fff; padding: 20px; text-align: center; margin-top: 5%;}
+				.footer {background-color: #fff; padding: 3%; text-align: center; margin-top: 5%;}
+
+				.bottomLinks {color: black;}
+
+				.bottomLinks a {color: #3e79d8; text-decoration: underline;}
 
 				a.card {text-decoration: none; color: black;}
 
@@ -42,7 +48,7 @@
 
 				@media screen and (max-width: 1000px) {.leftcolumn, .rightcolumn { width: 100%; padding: 0;}}
 
-				@media screen and (max-width: 400px) {.topnav a { float: none; widthL 100%;}}
+				@media screen and (max-width: 500px) {.topnav a { float: none; widthL 100%;}}
 
 			</style>
 			<title>Game Design by Idiots</title>
@@ -127,13 +133,11 @@
 
 
 			 <div class="footer">
-				 <h3>Game Design by Idiots - We have no idea what we're doing</h3>
-			 	<ul class="bottomLinks">
-					<small>
-				 		<li><p>Contact us at: <a href="mailto:gdbidiots@gmail.com">gdbidiots@gmail.com</a></p>
-				 		<li><p>Find us on <a href="https://www.youtube.com/channel/UC5S2dlWwpnHcoNMoAVFUM7Q" target="_blank">Youtube</a></p>
-			 		</small>
-		 		</ul>
+				<h3>Game Design by Idiots - We have no idea what we're doing</h3>
+				<small class="bottomLinks">
+				 	<p>Contact us at: <a href="mailto:gdbidiots@gmail.com">gdbidiots@gmail.com</a><br>
+				 	Find us on <a href="https://www.youtube.com/channel/UC5S2dlWwpnHcoNMoAVFUM7Q" target="_blank">Youtube</a></p>
+			 	</small>
 		 	</div>
 		</div>
 		</body>
