@@ -6,15 +6,13 @@
 
 				* {box-sizing: border-box;}
 
-				body {font-family: Arial; padding: 10px; text-color: black;}
+				body {font-family: Arial; text-color: black; margin: 0}
 
-				.header {padding: 30px; text-allign: center; font-color: white;}
-
-				.header h1 { font-size: 50px;}
+				.header {padding: 1%; font-size: 100%;}
 
 				.topnav {overflow: hidden; background-color: #333;}
 
-				.topnav a {float: left; display: block; color: #f2f2f2; text-allign: center; padding: 1%; text-decoration: none;}
+				.topnav a {float: left; display: block; color: #f2f2f2; padding: 1%; text-decoration: none;}
 
 				.topnav a:hover {background-color: #ddd; color: black;}
 
@@ -22,9 +20,11 @@
 
 				.rightcolumn {float: left; width: 25%; padding-left: 1.5%; background-color: grey;}
 
-				.fakeimg {background-color: #aaa; width: 100%; padding: 20px;}
+				.fakeimg {background-color: #aaa; width: 100%; padding: 2%; overflow: hidden; height: 50%;}
 
 				.card {background-color: white; padding: 1.5%; margin-top: 1.5%;}
+
+				.cardLink {color: black; background-color: white; text-decoration: none;}
 
 				.cardRight {background-color: white; padding: 3.5%; margin-top: 4.8%;}
 
@@ -61,28 +61,30 @@
 				<div class="leftcolumn">
 					<!-- 1st Card - Anime Roulette -->
 					<div class="card">
-						<a class="card" href="#"><h2>Anime Roulette</h2>
-						<h5>Like Russian Roulette, but with anime, and much, much worse.</h5></a>
-						<p></p>
-						<div class="fakeimg" style="height:50%;">
-							<img alt="a picture of Anime Roulette" src="../Images/anime roulette.jpg" width="50%" height="50%"/><p>(placeholder img)</p>
-							<p>Welcome to Anime Roulette!
-								This will read from the provided list,<br>
-								pick an item at random,<br>
-								and pick how many episodes to watch.<br>
-								Enjoy! (or don't. You could get something awful for all I know.)</p>
-					 </div>
+						<a class="cardLink" href="#">
+							<h2>Anime Roulette</h2>
+							<h5>Like Russian Roulette, but with anime, and much, much worse.</h5>
+							<div class="fakeimg">
+								<img alt="a picture of Anime Roulette" src="../Images/anime roulette.jpg" width="50%" height="50%"/><p>(placeholder img)</p>
+								<p>Welcome to Anime Roulette!
+									This will read from the provided list,<br>
+									pick an item at random,<br>
+									and pick how many episodes to watch.<br>
+									Enjoy! (or don't. You could get something awful for all I know.)</p>
+						 </div>
+						</a>
 				 </div>
 
 					<!-- 2nd Card - WDFD -->
 					<div class="card">
-						<a class="card" href="#"><h2>World Domination for Dummies</h2>
-						<h5>Globally establishing Communism.</h5></a>
-						<p></p>
-						<div class="fakeimg" style="height:200px;">
-							<p>Image</p>
-							<p>Desc.</p>
-						</div>
+						<a class="cardLink" href="#">
+							<h2>World Domination for Dummies</h2>
+							<h5>Globally establishing Communism.</h5>
+							<div class="fakeimg">
+								<p>Image</p>
+								<p>Desc.</p>
+							</div>
+						</a>
 					</div>
 				</div>
 
