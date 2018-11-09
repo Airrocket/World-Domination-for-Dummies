@@ -19,7 +19,7 @@
 
           .topnav a.selected {background-color: #e8e8e8; color: black;}
 
-          .game {background-color: white; padding: 1.5%; margin: 1.5%}
+          .game {background-color: white; padding: 1.5%; margin: 1.5%; text-align: center; border: 3px solid #000;}
 
           .fakeimg {background-color: #aaa; width: 100%; padding: 2%; overflow: hidden; height: 100%; margin: 1%;}
 
@@ -46,8 +46,24 @@
           <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Rick Astley</a>
         </div>
         <div class="game">
-          <p>eventually there's gonna be a  lot of script tags, have fun guys!</p>
-          <img src="../../Images/o hi delano.jpg" width="15%" height="15%"/>
+          <p id="game">Welcome to anime Roulette! <br>
+            This will take a list of shows, <br>
+            pick one at random, <br>
+            then pick how many episodes to watch. <br>
+            Enjoy! (or don't you could get something awful for all I know.)</p>
+          <button type="button" onclick="
+            function sleep(delay) {
+              var start = new Date().getTime();
+              while (new Date().getTime() < start + delay);
+            };
+            document.getElementById('game').innerHTML = 'You have chosen to continue, by the law of stupid games, <br>you may not back down.';
+            console.log('test1');
+            sleep(1000);
+            console.log('test2');
+            document.getElementById('game').innerHTML = 'hi again dood';">Continue?</button>
+          <script>
+
+          </script>
         </div>
 
         <div class="footer">
