@@ -1,0 +1,37 @@
+html {background-color: #dadde5}
+
+* {box-sizing: border-box;}
+
+body {font-family: Arial; color: black; margin: 0;}
+
+.header {padding: 1%; font-size: 100%;}
+
+.topnav {overflow: hidden; background-color: #333; margin-bottom: 0;}
+
+.topnav a {display: block; float: left; color: #f2f2f2; padding: 1%; text-decoration: none; border-right: 2px solid #dadde5;}
+
+.topnav a:hover {background-color: #e8e8e8; color: black;}
+
+.topnav a.selected {background-color: #e8e8e8; color: black;}
+
+.centerBody {background-color: grey;}
+
+.about {background-color: #fff; padding: 2%; margin: 2%;}
+
+.faq {background-color: #fff; padding: 2%; margin: 2%;}
+
+.center {background-color: grey;}
+
+.footer {background-color: #fff; padding: 20px; text-align: center; margin-top: 5%;}
+
+.emailLink {color: #3e79d8;}
+
+.bottomLinks {color: black;}
+
+.bottomLinks a {color: #3e79d8; text-decoration: underline;}
+
+ul {list-style-type: none;}
+
+@media screen and (max-width: 1000px) {.leftcolumn, .rightcolumn { width: 100%; padding: 0;}}
+
+@media screen and (max-width: 400px) {.topnav a { float: none; widthL 100%;}}

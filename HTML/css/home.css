@@ -1,0 +1,47 @@
+html {background-color: #dadde5}
+
+* {box-sizing: border-box;}
+
+body {font-family: Arial; color: black; margin: 0;}
+
+.header {padding: 1%; font-size: 100%;}
+
+.topnav {overflow: hidden; background-color: #333; margin-bottom: 0;}
+
+.topnav a {display: block; float: left; color: #f2f2f2; padding: 1%; text-decoration: none; border-right: 2px solid #dadde5;}
+
+.topnav a:hover {background-color: #e8e8e8; color: black;}
+
+.topnav a.selected {background-color: #e8e8e8; color: black;}
+
+.leftcolumn {float: left; width: 75%; background-color: grey;}
+
+.rightcolumn {float: right; width: 25%; padding-left: 1.5%; background-color: grey;}
+
+.fakeimg {background-color: #aaa; width: 100%; padding: 2%; overflow: hidden; height: 50%;}
+
+.card {background-color: white; padding: 1.5%; margin: 1.5%}
+
+.cardLink {color: black; background-color: white; text-decoration: none;}
+
+.cardRight {background-color: white; padding: 3.5%; margin: 4.8%;}
+
+@media screen and (max-width: 1000px) {.cardRight {padding: 1.5%; margin: 1.5%}}
+
+.center {background-color: grey;}
+
+.row:after {content: ""; display: table; clear: both;}
+
+.footer {background-color: #fff; padding: 3%; text-align: center; margin-top: 5%;}
+
+.bottomLinks {color: black;}
+
+.bottomLinks a {color: #3e79d8; text-decoration: underline;}
+
+a.card {text-decoration: none; color: black;}
+
+ul {list-style-type: none;}
+
+@media screen and (max-width: 1000px) {.leftcolumn, .rightcolumn { width: 100%; padding: 0;}}
+
+@media screen and (max-width: 500px) {.topnav a { float: none; widthL 100%;}}

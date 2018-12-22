@@ -1,56 +1,7 @@
 <!DOCTYPE html>
 	<html>
 		<head>
-			<style>
-				html {background-color: #dadde5}
-
-				* {box-sizing: border-box;}
-
-				body {font-family: Arial; color: black; margin: 0;}
-
-				.header {padding: 1%; font-size: 100%;}
-
-				.topnav {overflow: hidden; background-color: #333; margin-bottom: 0;}
-
-				.topnav a {display: block; float: left; color: #f2f2f2; padding: 1%; text-decoration: none; border-right: 2px solid #dadde5;}
-
-				.topnav a:hover {background-color: #e8e8e8; color: black;}
-
-				.topnav a.selected {background-color: #e8e8e8; color: black;}
-
-				.leftcolumn {float: left; width: 75%; background-color: grey;}
-
-				.rightcolumn {float: right; width: 25%; padding-left: 1.5%; background-color: grey;}
-
-				.fakeimg {background-color: #aaa; width: 100%; padding: 2%; overflow: hidden; height: 50%;}
-
-				.card {background-color: white; padding: 1.5%; margin: 1.5%}
-
-				.cardLink {color: black; background-color: white; text-decoration: none;}
-
-				.cardRight {background-color: white; padding: 3.5%; margin: 4.8%;}
-
-				@media screen and (max-width: 1000px) {.cardRight {padding: 1.5%; margin: 1.5%}}
-
-				.center {background-color: grey;}
-
-				.row:after {content: ""; display: table; clear: both;}
-
-				.footer {background-color: #fff; padding: 3%; text-align: center; margin-top: 5%;}
-
-				.bottomLinks {color: black;}
-
-				.bottomLinks a {color: #3e79d8; text-decoration: underline;}
-
-				a.card {text-decoration: none; color: black;}
-
-				ul {list-style-type: none;}
-
-				@media screen and (max-width: 1000px) {.leftcolumn, .rightcolumn { width: 100%; padding: 0;}}
-
-				@media screen and (max-width: 500px) {.topnav a { float: none; widthL 100%;}}
-
-			</style>
+			<link type = "text/css" rel="stylesheet" href="css/home.css"/>
 			<title>Game Design by Idiots</title>
 			<link rel="shortcut icon" href="../Images/favicon_placeholder.jpg"/>
 		</head>
@@ -70,7 +21,7 @@
 					<div class="leftcolumn">
 						<!-- 1st Card - Anime Roulette -->
 						<div class="card">
-							<a class="cardLink" href="Games/animeRoulette.html">
+							<a class="cardLink" href="games/animeRoulette.html">
 								<h2>Anime Roulette</h2>
 								<h5>Like Russian Roulette, but with anime, and much, much worse.</h5>
 								<div class="fakeimg">
@@ -89,6 +40,18 @@
 							<a class="cardLink" href="#">
 								<h2>World Domination for Dummies</h2>
 								<h5>Globally establishing Communism.</h5>
+								<div class="fakeimg">
+									<p>Image</p>
+									<p>Desc.</p>
+								</div>
+							</a>
+						</div>
+
+						<!-- 3rd Card - Minesweeper -->
+						<div class="card">
+							<a class="cardLink" href="games/minesweeper.html">
+								<h2>Multiplayer Minesweeper</h2>
+								<h5>Because why not</h5>
 								<div class="fakeimg">
 									<p>Image</p>
 									<p>Desc.</p>
