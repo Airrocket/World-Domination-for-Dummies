@@ -4,34 +4,21 @@
       <Title>Anime Roulette</title>
         <style>
           html {background-color: #dadde5}
-
           * {box-sizing: border-box;}
-
           body {font-family: Arial; color: black; margin: 0;}
-
           .header {padding: 1%; font-size: 60%; text-align: center;}
-
           .topnav {overflow: hidden; background-color: #333; margin-bottom: 0; font-size: 60%;}
-
           .topnav a {display: block; float: left; color: #f2f2f2; padding: 1%; text-decoration: none; border-right: 2px solid #dadde5;}
-
           .topnav a:hover {background-color: #e8e8e8; color: black;}
-
           .topnav a.selected {background-color: #e8e8e8; color: black;}
-
-          .game {background-color: white; padding: 1.5%; margin: 1.5%; text-align: center; border: 3px solid #000;}
-
+          #game {margin: .5%}
+          #gameScreen {background-color: white; margin: 1.5%; text-align: center; border: 3px solid #000; display: block;}
           .fakeimg {background-color: #aaa; width: 100%; padding: 2%; overflow: hidden; height: 100%; margin: 1%;}
-
           .centerBody {background-color: grey;}
-
           .center {background-color: grey;}
-
-          .footer {background-color: #fff; padding: 20px; text-align: center; margin-top: 5%;}
-
+          .footer {background-color: #fff; padding: 1%; text-align: center;}
           .bottomLinks {color: black;}
-
-          .bottomLinks a {color: #3e79d8; text-decoration: underline;
+          .bottomLinks a {color: #3e79d8; text-decoration: underline;}
         </style>
     </head>
     <body>
@@ -43,36 +30,53 @@
         <div class="topnav">
           <a href="../gdbiHomePage.html">Home</a>
           <a href="../about.html">FAQ/About</a>
-          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Rick Astley</a>
+          <!-- <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Rick Astley</a> -->
+          <!-- dade dont like 'unprofessional' -->
         </div>
-        <div class="game">
-          <p id="game">Welcome to anime Roulette! <br>
-            This will take a list of shows, <br>
-            pick one at random, <br>
-            then pick how many episodes to watch. <br>
-            Enjoy! (or don't you could get something awful for all I know.)</p>
-          <button type="button" onclick="
+
+        <div id="game">
+          <canvas id="gameScreen" style="border: 3px solid black; margin-left: auto; margin-right: auto;"></canvas>
+          <script>
             function sleep(delay) {
               var start = new Date().getTime();
               while (new Date().getTime() < start + delay);
-            };
-            document.getElementById('game').innerHTML = 'You have chosen to continue, by the law of stupid games, <br>you may not back down.';
-            console.log('test1');
-            sleep(1000);
-            console.log('test2');
-            document.getElementById('game').innerHTML = 'hi again dood';">Continue?</button>
-          <script>
+            }
 
+            var canvas = document.getElementById('gameScreen');
+
+            var container = document.getElementById('game');
+            var height = (container.offsetHeight) * .98;
+            var width = (container.offsetWidth) * .98;
+
+            canvas.height = height;
+            canvas.width = width;
+
+            var cx = canvas.getContext('2d');
+
+            cx.font = "30px Comic Sans MS";
+            cx.fillStyle = "blue";
+            cx.clearRect(0,0, canvas.width, canvas.height);
+            console.log('clear');
+            sleep(1000);
+            cx.fillRect (0, 0, canvas.width, canvas.height);
+            cx.fillStyle = "red";
+            cx.fillText("wowzerz", 10, 50);
+            console.log('draw1');
+            sleep(1000);
+            cx.clearRect(0,0, canvas.width, canvas.height);
+            console.log("clear2");
+            cx.fillText("wizzy wozerz", 20, 60);
+            console.log("draw2");
           </script>
         </div>
 
         <div class="footer">
- 				<h3>Game Design by Idiots - We have no idea what we're doing</h3>
+ 				<h4>Game Design by Idiots - We have no idea what we're doing</h4>
  				<small class="bottomLinks">
  				 	<p>Contact us at: <a href="mailto:gdbidiots@gmail.com">gdbidiots@gmail.com</a><br>
  				 	Find us on <a href="https://www.youtube.com/channel/UC5S2dlWwpnHcoNMoAVFUM7Q" target="_blank">Youtube</a></p>
  			 	</small>
- 		 	</div>
+ 		 	 </div>
       </div>
     </body>
   </html>
