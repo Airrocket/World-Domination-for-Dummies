@@ -1,5 +1,6 @@
 $(document).ready(() => {
   var value = 0;
+  console.log(value);
   $('.fakeimg').slideUp({duration:350});
 
   //Left cards
