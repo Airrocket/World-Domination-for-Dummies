@@ -1,13 +1,13 @@
 <!DOCTYPE html>
   <html>
     <head>
-      <Title>Anime Roulette</title>
-        <link type = "text/css" rel="stylesheet" href="../css/animeRoulette.css"/>
+      <Title>Breakout</title>
+        <link type = "text/css" rel="stylesheet" href="../css/breakout.css"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </head>
     <body>
       <div class="header">
-        <h1>Anime Roulette</h1>
+        <h1>Atari Breakout</h1>
       </div>
       <div class="center">
         <!-- Top Navbar -->
@@ -20,7 +20,8 @@
 
         <div id="game">
           <canvas id="gameScreen" width="480" height="320"></canvas>
-          
+          <script src = "../js/breakout.js"></script>
+          <button type="button" onclick="var interval = setInterval(draw, 16.7); this.style.display = 'none'" class="start">Start</button>
         </div>
 
         <div class="footer">
@@ -31,6 +32,5 @@
  			 	</small>
  		 	 </div>
       </div>
-      <script src = "js/animeRoulette.js"></script>
     </body>
   </html>

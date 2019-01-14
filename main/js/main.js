@@ -28,15 +28,27 @@ $(document).ready(() => {
     }
   })
 
-  //minesweeper card//
+  //breakout card//
   $('#arrow-3').on('click', () => {
-    $('#minesweeper').slideToggle({duration:600});
+    $('#breakout').slideToggle({duration:600});
     if (value == 0) {
       value = 90;
       $('#arrow-3').rotate({animateTo:value, duration: 600, duration: 400});
     } else if (value == 90) {
       value = 0;
       $('#arrow-3').rotate({animateTo:value, duration: 600, duration: 400});
+    }
+  })
+
+  //minesweeper card//
+  $('#arrow-4').on('click', () => {
+    $('#minesweeper').slideToggle({duration:600});
+    if (value == 0) {
+      value = 90;
+      $('#arrow-4').rotate({animateTo:value, duration: 600, duration: 400});
+    } else if (value == 90) {
+      value = 0;
+      $('#arrow-4').rotate({animateTo:value, duration: 600, duration: 400});
     }
   })
 

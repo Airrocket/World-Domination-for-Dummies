@@ -6,8 +6,8 @@ body {font-family: Arial; color: black; margin: 0;}
 .topnav a {display: block; float: left; color: #f2f2f2; padding: 1%; text-decoration: none; border-right: 2px solid #dadde5;}
 .topnav a:hover {background-color: #e8e8e8; color: black;}
 .topnav a.selected {background-color: #e8e8e8; color: black;}
-#game {margin: .5%}
-#gameScreen {background: #eee; display: block; margin: 0 auto;}
+#game {margin: .5%; text-align: center;}
+#gameScreen {background: #eee; display: block; margin: auto;}
 .fakeimg {background-color: #aaa; width: 100%; padding: 2%; overflow: hidden; height: 100%; margin: 1%;}
 .centerBody {background-color: grey;}
 .center {background-color: grey;}
