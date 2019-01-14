@@ -158,9 +158,7 @@ function draw() {
     //Bounce when hit paddle
     if (ballX > paddleX && ballX < paddleX + paddleWidth) {
       ballDy = -ballDy;
-
-    }
-    else {
+    } else {
       //Game over when touch bottom wall
       alert("Game Over\nYou got " + score + " points!");
       document.location.reload();
