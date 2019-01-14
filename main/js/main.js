@@ -1,11 +1,11 @@
 $(document).ready(() => {
   var value = 0;
-  console.log(value);
   $('.fakeimg').slideUp({duration:350});
 
   //Left cards
   //anime roulette card//
   $('#arrow-1').on('click', () => {
+    var value1
     $('#animeRoulette').slideToggle({duration:600});
     if (value == 0) {
       value = 90;
@@ -33,10 +33,10 @@ $(document).ready(() => {
     $('#breakout').slideToggle({duration:600});
     if (value == 0) {
       value = 90;
-      $('#arrow-3').rotate({animateTo:value, duration: 600, duration: 400});
+      $('#arrow-3').rotate({animateTo:value, duration: 600});
     } else if (value == 90) {
       value = 0;
-      $('#arrow-3').rotate({animateTo:value, duration: 600, duration: 400});
+      $('#arrow-3').rotate({animateTo:value, duration: 600});
     }
   })
 
@@ -45,10 +45,22 @@ $(document).ready(() => {
     $('#minesweeper').slideToggle({duration:600});
     if (value == 0) {
       value = 90;
-      $('#arrow-4').rotate({animateTo:value, duration: 600, duration: 400});
+      $('#arrow-4').rotate({animateTo:value, duration: 600});
     } else if (value == 90) {
       value = 0;
-      $('#arrow-4').rotate({animateTo:value, duration: 600, duration: 400});
+      $('#arrow-4').rotate({animateTo:value, duration: 600});
+    }
+  })
+
+  //coinflip card//
+  $('#arrow-5').on('click', () => {
+    $('#coinflip').slideToggle({duration:600});
+    if (value == 0) {
+      value = 90;
+      $('#arrow-5').rotate({animateTo:value, duration: 600});
+    } else if (value == 90) {
+      value = 0;
+      $('#arrow-5').rotate({animateTo:value, duration: 600});
     }
   })
 
@@ -59,10 +71,10 @@ $(document).ready(() => {
     $('#Rinfo-1').slideToggle({duration:600});
     if (value == 0) {
       value = 90;
-      $('#r-arrow-1').rotate({animateTo:value, duration: 600, duration: 400});
+      $('#r-arrow-1').rotate({animateTo:value, duration: 600});
     } else if (value == 90) {
       value = 0;
-      $('#r-arrow-1').rotate({animateTo:value, duration: 600, duration: 400});
+      $('#r-arrow-1').rotate({animateTo:value, duration: 600});
     }
   })
 
@@ -71,10 +83,10 @@ $(document).ready(() => {
     $('#Rinfo-2').slideToggle({duration:600});
     if (value == 0) {
       value = 90;
-      $('#r-arrow-2').rotate({animateTo:value, duration: 600, duration: 400});
+      $('#r-arrow-2').rotate({animateTo:value, duration: 600});
     } else if (value == 90) {
       value = 0;
-      $('#r-arrow-2').rotate({animateTo:value, duration: 600, duration: 400});
+      $('#r-arrow-2').rotate({animateTo:value, duration: 600});
     }
   })
 
