@@ -2,4 +2,4 @@
 
 
 
-A bunch of idiots trying to make games
+A few idiots trying to make games.
