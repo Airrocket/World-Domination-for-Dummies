@@ -1,0 +1,19 @@
+html {background-color: #dadde5}
+body {font-family: Arial; color: black; margin: 0;}
+  .header {padding: 1%; font-size: 60%; text-align: center;}
+  .topnav {overflow: hidden; background-color: #333; margin-bottom: 0; font-size: 60%;}
+  .topnav a {display: block; float: left; color: #f2f2f2; padding: 1%; text-decoration: none; border-right: 2px solid #dadde5;}
+  .topnav a:hover {background-color: #e8e8e8; color: black;}
+  .topnav a.selected {background-color: #e8e8e8; color: black;}
+  .center {background-color: grey;}
+    #game {text-align: center; background-color: grey; margin: .5%}
+      .gameInner {background-color: white;}
+        .scoreBoard {float: left; border: 2px solid black; margin: .5%;}
+          .scoreHeader {margin: 0;}
+        .store {float: right; border: 2px solid black; margin: .5%;}
+        p {margin: 0;}
+        .cursor {background: url(../images/cursorIcon.png) no-repeat; background-position: left;}
+
+  .footer {background-color: #fff; padding: 1%; text-align: center; margin-bottom: auto;}
+  .bottomLinks {color: black; margin-bottom: auto;}
+  .bottomLinks a {color: #3e79d8; text-decoration: underline;}

@@ -35,6 +35,12 @@ $(document).ready(() => {
     rotate('#arrow-5');
   })
 
+  //cookies card//
+  $('#arrow-6').on('click', () => {
+    $('#cookies').slideToggle({duration:600});
+    rotate('#arrow-6');
+  })
+
 
   //Right cards
   //1st card//
