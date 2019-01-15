@@ -1,67 +1,38 @@
 $(document).ready(() => {
-  var value = 0;
+  function rotate (arrow) {
+    $(arrow).rotate({animateTo:(90-$(arrow).getRotateAngle()), duration: 600});
+  }
   $('.fakeimg').slideUp({duration:350});
 
   //Left cards
-  //anime roulette card//
+  //breakout card//
   $('#arrow-1').on('click', () => {
-    var value1
+    $('#breakout').slideToggle({duration:600});
+    rotate('#arrow-1');
+  })
+
+  //anime roulette card//
+  $('#arrow-2').on('click', () => {
     $('#animeRoulette').slideToggle({duration:600});
-    if (value == 0) {
-      value = 90;
-      $('#arrow-1').rotate({animateTo:value, duration: 600});
-    } else if (value == 90) {
-      value = 0;
-      $('#arrow-1').rotate({animateTo:value, duration: 600});
-    }
+    rotate('#arrow-2');
   })
 
   //wdfd card//
-  $('#arrow-2').on('click', () => {
-    $('#wdfd').slideToggle({duration:600});
-    if (value == 0) {
-      value = 90;
-      $('#arrow-2').rotate({animateTo:value, duration: 600});
-    } else if (value == 90) {
-      value = 0;
-      $('#arrow-2').rotate({animateTo:value, duration: 600});
-    }
-  })
-
-  //breakout card//
   $('#arrow-3').on('click', () => {
-    $('#breakout').slideToggle({duration:600});
-    if (value == 0) {
-      value = 90;
-      $('#arrow-3').rotate({animateTo:value, duration: 600});
-    } else if (value == 90) {
-      value = 0;
-      $('#arrow-3').rotate({animateTo:value, duration: 600});
-    }
+    $('#wdfd').slideToggle({duration:600});
+    rotate('#arrow-3');
   })
 
   //minesweeper card//
   $('#arrow-4').on('click', () => {
     $('#minesweeper').slideToggle({duration:600});
-    if (value == 0) {
-      value = 90;
-      $('#arrow-4').rotate({animateTo:value, duration: 600});
-    } else if (value == 90) {
-      value = 0;
-      $('#arrow-4').rotate({animateTo:value, duration: 600});
-    }
+    rotate('#arrow-4');
   })
 
   //coinflip card//
   $('#arrow-5').on('click', () => {
     $('#coinflip').slideToggle({duration:600});
-    if (value == 0) {
-      value = 90;
-      $('#arrow-5').rotate({animateTo:value, duration: 600});
-    } else if (value == 90) {
-      value = 0;
-      $('#arrow-5').rotate({animateTo:value, duration: 600});
-    }
+    rotate('#arrow-5');
   })
 
 
@@ -69,36 +40,18 @@ $(document).ready(() => {
   //1st card//
   $('#r-arrow-1').on('click', () => {
     $('#Rinfo-1').slideToggle({duration:600});
-    if (value == 0) {
-      value = 90;
-      $('#r-arrow-1').rotate({animateTo:value, duration: 600});
-    } else if (value == 90) {
-      value = 0;
-      $('#r-arrow-1').rotate({animateTo:value, duration: 600});
-    }
+    rotate('#r-arrow-1');
   })
 
   //2nd card//
   $('#r-arrow-2').on('click', () => {
     $('#Rinfo-2').slideToggle({duration:600});
-    if (value == 0) {
-      value = 90;
-      $('#r-arrow-2').rotate({animateTo:value, duration: 600});
-    } else if (value == 90) {
-      value = 0;
-      $('#r-arrow-2').rotate({animateTo:value, duration: 600});
-    }
+    rotate('#r-arrow-2');
   })
 
   //3rd card//
   $('#r-arrow-3').on('click', () => {
     $('#Rinfo-3').slideToggle({duration:600});
-    if (value == 0) {
-      value = 90;
-      $('#r-arrow-3').rotate({animateTo:value, duration: 600});
-    } else if (value == 90) {
-      value = 0;
-      $('#r-arrow-3').rotate({animateTo:value, duration: 600});
-    }
+    rotate('#r-arrow-3');
   })
 });
