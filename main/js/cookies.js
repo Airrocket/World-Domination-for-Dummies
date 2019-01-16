@@ -1,4 +1,5 @@
 $(document).ready(() => {
+  var interval;
   var cps = 0;
   var autoMultiplier = 1;
   var buildings = [0];
@@ -9,24 +10,24 @@ $(document).ready(() => {
     score += cps;
     document.getElementById("score").innerHTML = score;
     document.getElementById("title").innerHTML = "SCCC: " + score + " Cookies";
-    console.clear();
+    //console.clear();
     console.log("\n" + score + " Cookies");
     console.log("auto cookies")
   };
-  function giveCookies() {
-    var interval = setInterval(autoCookies(), 1000);
-  }
 
   function buy(price, buildingID, buildingAmount) {
     if (score >= price) {
       buildingAmount = buildingAmount + 1;
       buildings[buildingID] = buildingAmount
       score = score - price
-      cps = cps + buildingAmount*autoMultiplier
+      cps = buildingAmount*autoMultiplier
+      buildingsPrice[buildingID] = Math.ceil(price*1.33);
       document.getElementById("score").innerHTML = score;
       document.getElementById(buildingID).innerHTML = buildings[buildingID];
       document.getElementById("title").innerHTML = "SCCC: " + score + " Cookies";
-      console.log(buildingAmount + " " + buildingID)
+      console.log(buildingAmount + " " + buildingID + " at " + buildingsPrice[buildingID]);
+      document.getElementById("cps").innerHTML = cps;
+      document.getElementById(buildingID + "price").innerHTML = buildingsPrice[buildingID];
 
     } else {
       console.log("Transaction failed")
@@ -50,7 +51,7 @@ $(document).ready(() => {
     score += clickMultiplier;
     document.getElementById("score").innerHTML = score;
     document.getElementById("title").innerHTML = "SCCC: " + score + " Cookies";
-    console.clear();
+    //console.clear();
     console.log("\n" + score + " Cookies");
   })
 
@@ -60,5 +61,5 @@ $(document).ready(() => {
     buy(buildingsPrice[0], '0', buildings[0]);
   })
 
-  giveCookies();
+  interval = setInterval(autoCookies, 1000);
 });
