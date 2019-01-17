@@ -11,6 +11,7 @@ body {font-family: Arial; color: black; margin: 0;}
 .fakeimg {background-color: #aaa; width: 100%; padding: 2%; overflow: hidden; height: 100%; margin: 1%;}
 .centerBody {background-color: grey;}
 .center {background-color: grey;}
+.credit {font-size: 10px; margin-left: .5%;}
 .footer {background-color: #fff; padding: 1%; text-align: center;}
 .bottomLinks {color: black;}
 .bottomLinks a {color: #3e79d8; text-decoration: underline;}
