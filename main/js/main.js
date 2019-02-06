@@ -3,8 +3,23 @@ $(document).ready(() => {
     $(arrow).rotate({animateTo:(90-$(arrow).getRotateAngle()), duration: 600});
   }
   $('.fakeimg').slideUp({duration:350});
+  $('.experimentCard').hide();
+  $('.gameCard').show();
 
   //Left cards
+  //Games/Experiments bar
+  $('#gamesTab').on('click', () => {
+    $('.experimentCard').slideUp();
+    $('.gameCard').slideDown();
+    console.log("Games Tab");
+  })
+
+  $('#experimentsTab').on('click', () => {
+    $('.gameCard').slideUp();
+    $('.experimentCard').slideDown();
+    console.log("Experiments Tab");
+  })
+
   //breakout card//
   $('#arrow-1').on('click', () => {
     $('#breakout').slideToggle({duration:600});

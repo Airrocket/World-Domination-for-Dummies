@@ -21,6 +21,10 @@ var paddleHeight = 10;
 var paddleWidth = 90;
 var paddleX = (canvas.width-paddleWidth)/2;
 var paddleY = canvas.height-paddleHeight
+//Mvmt speed
+var paddleDx = 5;
+var paddleDy = 5;
+
 //Controls
 var rightPressed = false;
 var leftPressed = false;
@@ -76,8 +80,10 @@ function collisionDetection() {
           b.status = 0;
           score += 1;
           //Speed up when score
-          // ballDy += ballDy/2
-          // ballDx += ballDx/2
+          ballDy += ballDy/10
+          ballDx += ballDx/10
+          paddleDx += paddleDx/5
+          paddleDy += paddleDy/5
         }
       }
     }
@@ -174,9 +180,9 @@ function draw() {
 
   //Paddle movement
   if(rightPressed && paddleX < canvas.width-paddleWidth) {
-    paddleX += 5;
+    paddleX += paddleDx;
   }
   else if(leftPressed && paddleX > 0) {
-    paddleX -= 5;
+    paddleX -= paddleDy;
   }
 }
