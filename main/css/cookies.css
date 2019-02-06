@@ -12,7 +12,9 @@ p {margin: 0;}
 .scoreHeader {margin: 0;}
 .store {float: right; border: 2px solid black; margin: .5%;}
 .cursor {background: url(../images/cursorIcon.png) no-repeat; background-position: left;}
+.grandpa {background: url(../images/grandpaIcon.png) no-repeat; background-position: left;}
 .credit {font-size: 10px; margin-left: .5%;}
+#storeObject {border-top: 2px solid black;}
 
 .footer {background-color: #fff; padding: 1%; text-align: center; margin-bottom: auto;}
 .bottomLinks {color: black; margin-bottom: auto;}

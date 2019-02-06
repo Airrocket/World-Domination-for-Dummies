@@ -2,16 +2,18 @@ $(document).ready(() => {
   var interval;
   var cps = 0;
   var autoMultiplier = 1;
-  var buildings = [0];
-  var buildingsPrice = [15];
+  var buildings = [0, 0];
+  var buildingsPrice = [15, 111];
+  var buildingCps = [1, 5]
 
   //Auto cookies
   function autoCookies() {
     score += cps;
     document.getElementById("score").innerHTML = score;
     document.getElementById("title").innerHTML = "SCCC: " + score + " Cookies";
-    //console.clear();
+    console.clear();
     console.log("\n" + score + " Cookies");
+    console.log("CPS: " + cps)
     console.log("auto cookies")
   };
 
@@ -20,7 +22,7 @@ $(document).ready(() => {
       buildingAmount = buildingAmount + 1;
       buildings[buildingID] = buildingAmount
       score = score - price
-      cps = buildingAmount*autoMultiplier
+      cps = cps + buildingCps[buildingID]
       buildingsPrice[buildingID] = Math.ceil(price*1.33);
       document.getElementById("score").innerHTML = score;
       document.getElementById(buildingID).innerHTML = buildings[buildingID];
@@ -59,6 +61,10 @@ $(document).ready(() => {
   $('.cursor').on('click', () => {
     console.log("Buy cursor")
     buy(buildingsPrice[0], '0', buildings[0]);
+  })
+  $('.grandpa').on('click', () => {
+    console.log("Buy grandpa")
+    buy(buildingsPrice[1], '1', buildings[1])
   })
 
   interval = setInterval(autoCookies, 1000);
