@@ -56,6 +56,12 @@ $(document).ready(() => {
     rotate('#arrow-6');
   })
 
+  //linearExpressions card//
+  $('#arrow-7').on('click', () => {
+    $('#linearExpressions').slideToggle({duration:600});
+    rotate('#arrow-7');
+  })
+
 
   //Right cards
   //1st card//

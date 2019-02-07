@@ -1,8 +1,3 @@
-$('#start').on('click', () => {
-  console.log('nope');
-  $('#start').hide;
-});
-
 //Find canvas and get context
 var canvas = document.getElementById("gameScreen");
 var cx = canvas.getContext("2d");
