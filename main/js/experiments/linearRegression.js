@@ -64,7 +64,7 @@ function gradStep(intercept, slope, alpha) {
 };
 
 function doGradDescent() {
-  var alpha = .0001;
+  var alpha = .00001;
   slope = 0;
   intercept = 250;
   drawLine(intercept, slope);

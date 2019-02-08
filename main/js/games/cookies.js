@@ -6,37 +6,54 @@ $(document).ready(() => {
   var buildingsPrice = [15, 111];
   var buildingCps = [1, 5]
 
+  //Browser cookie writer
+  function writeCookies (buildings, cookies) {
+    var exdate=new Date();
+    exdate.setDate(exdate.getDate() + 5*365);
+    var bcValue = buildings.join(".") + "." + cookies
+    document.cookie = "gameData=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
+    document.cookie = "gameData=" + bcValue + "; expires=" + exdate + "; path=/";
+    console.log("Cookies written with value: " + bcValue);
+  };
+
+  //Browser cookie reader
+  function readCookies () {
+    var bcReadValue = document.cookie
+    console.log(bcReadValue);
+  };
+
   //Auto cookies
   function autoCookies() {
-    score += cps;
-    document.getElementById("score").innerHTML = score;
-    document.getElementById("title").innerHTML = "SCCC: " + score + " Cookies";
-    console.clear();
-    console.log("\n" + score + " Cookies");
-    console.log("CPS: " + cps)
-    console.log("auto cookies")
+    cookies += cps;
+    document.getElementById("cookies").innerHTML = cookies;
+    document.getElementById("title").innerHTML = "SCCC: " + cookies + " Cookies";
+    // console.clear();
+    // console.log("\n" + cookies + " Cookies");
+    // console.log("CPS: " + cps)
+    // console.log("auto cookies")
   };
 
   function buy(price, buildingID, buildingAmount) {
-    if (score >= price) {
-      buildingAmount = buildingAmount + 1;
+    if (cookies >= price) {
+      buildingAmount += 1;
       buildings[buildingID] = buildingAmount
-      score = score - price
+      cookies = cookies - price
       cps = cps + buildingCps[buildingID]
+      console.log(buildingAmount + " of " + buildingID + " at " + buildingsPrice[buildingID]);
       buildingsPrice[buildingID] = Math.ceil(price*1.33);
-      document.getElementById("score").innerHTML = score;
+      document.getElementById("cookies").innerHTML = cookies;
       document.getElementById(buildingID).innerHTML = buildings[buildingID];
-      document.getElementById("title").innerHTML = "SCCC: " + score + " Cookies";
-      console.log(buildingAmount + " " + buildingID + " at " + buildingsPrice[buildingID]);
+      document.getElementById("title").innerHTML = "SCCC: " + cookies + " Cookies";
       document.getElementById("cps").innerHTML = cps;
       document.getElementById(buildingID + "price").innerHTML = buildingsPrice[buildingID];
+      writeCookies(buildings, cookies);
 
     } else {
       console.log("Transaction failed")
     }
   };
 
-  var score = 0;
+  var cookies = 0;
   var clickMultiplier = 1;
 
   console.log("hello world!")
@@ -50,11 +67,11 @@ $(document).ready(() => {
     $('#cookie').width(240)
   }).mouseup(() => {
     $('#cookie').width(250)
-    score += clickMultiplier;
-    document.getElementById("score").innerHTML = score;
-    document.getElementById("title").innerHTML = "SCCC: " + score + " Cookies";
+    cookies += clickMultiplier;
+    document.getElementById("cookies").innerHTML = cookies;
+    document.getElementById("title").innerHTML = "SCCC: " + cookies + " Cookies";
     //console.clear();
-    console.log("\n" + score + " Cookies");
+    console.log("\n" + cookies + " Cookies");
   })
 
   //Store
@@ -67,5 +84,6 @@ $(document).ready(() => {
     buy(buildingsPrice[1], '1', buildings[1])
   })
 
+  readCookies();
   interval = setInterval(autoCookies, 1000);
 });
