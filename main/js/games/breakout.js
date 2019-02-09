@@ -75,10 +75,10 @@ function collisionDetection() {
           b.status = 0;
           score += 1;
           //Speed up when score
-          ballDy += ballDy/10
-          ballDx += ballDx/10
-          paddleDx += paddleDx/5
-          paddleDy += paddleDy/5
+          ballDy += ballDy/12
+          ballDx += ballDx/12
+          paddleDx += paddleDx/6
+          paddleDy += paddleDy/6
         }
       }
     }

@@ -11,13 +11,15 @@ body {font-family: Arial; color: black; margin: 0;}
 .fakeimg {background-color: #aaa; width: 100%; padding: 2%; overflow: hidden; height: 50%;}
 .gameCard {background-color: white; padding: 1.5%; margin: 1.5%}
 .experimentCard {background-color: white; padding: 1.5%; margin: 1.5%}
+.wipCard {background-color: white; padding: 1.5%; margin: 1.5%}
 .cardRight {background-color: white; padding: 3.5%; margin: 4.8%;}
 .center {background-color: grey;}
 .row:after {content: ""; display: table; clear: both;}
 .footer {background-color: #fff; padding: 3%; text-align: center; margin-top: 5%;}
 .bottomLinks {color: black;}
 .bottomLinks a {color: #3e79d8; text-decoration: underline;}
-a.card {text-decoration: none; color: black;}
+a {text-decoration: none; color: black;}
+.cardRight h2 {text-decoration: underline;}
 ul {list-style-type: none;}
 .dropdown-arrow {float: right; margin-top: 1%; margin-bottom: auto;}
 .playButton {display: block; float: left; background-color: #fff; color: black; padding: 1%; padding-right: 10%;
@@ -25,7 +27,6 @@ ul {list-style-type: none;}
 .playButton:hover {background-color: #ccc; color: black;}
 .colHeader {display: block; background-color: white; margin: 1.5%; overflow: hidden;}
 .colHeader div {display: block; float: left; padding: 1%; text-decoration: none; border-right: 3px solid grey;}
-.colHeader div:hover {background-color: lightgrey;}
 .colHeaderR {display: block; background-color: white; margin: 4.8%;}
 @media screen and (max-width: 1000px) {.leftcolumn, .rightcolumn { width: 100%; padding: 0;} .colHeaderR {margin: 1.5%}
   .cardRight {padding: 1.5%; margin: 1.5%}}

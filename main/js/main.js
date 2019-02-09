@@ -3,21 +3,47 @@ $(document).ready(() => {
     $(arrow).rotate({animateTo:(90-$(arrow).getRotateAngle()), duration: 600});
   }
   $('.fakeimg').slideUp({duration:350});
-  $('.experimentCard').hide();
-  $('.gameCard').show();
+  $('.experimentCard').slideUp();
+  $('.wipCard').slideUp();
+  $('.gameCard').slideDown();
+  $('#gamesTab').css('background-color', '#e8e8e8');
 
   //Left cards
-  //Games/Experiments bar
+  //Types bar
   $('#gamesTab').on('click', () => {
     $('.experimentCard').slideUp();
+    $('.wipCard').slideUp();
     $('.gameCard').slideDown();
+    $('.typeMenu').css('background-color', 'white')
+    $('#gamesTab').css('background-color', '#e8e8e8');
     console.log("Games Tab");
+  })
+
+  $('#wipTab').on('click', () => {
+    $('.gameCard').slideUp();
+    $('.wipCard').slideDown();
+    $('.experimentCard').slideUp();
+    $('.typeMenu').css('background-color', 'white')
+    $('#wipTab').css('background-color', '#e8e8e8');
+    console.log("WIP Tab");
   })
 
   $('#experimentsTab').on('click', () => {
     $('.gameCard').slideUp();
+    $('.wipCard').slideUp();
     $('.experimentCard').slideDown();
+    $('.typeMenu').css('background-color', 'white')
+    $('#experimentsTab').css('background-color', '#e8e8e8');
     console.log("Experiments Tab");
+  })
+
+  $('#allTab').on('click', () => {
+    $('.gameCard').slideDown();
+    $('.wipCard').slideDown();
+    $('.experimentCard').slideDown();
+    $('.typeMenu').css('background-color', 'white')
+    $('#allTab').css('background-color', '#e8e8e8');
+    console.log("All Tab");
   })
 
   //breakout card//

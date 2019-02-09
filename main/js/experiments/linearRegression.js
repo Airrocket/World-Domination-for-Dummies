@@ -33,6 +33,7 @@ function drawPoints(pointsX, pointsY, numPoints) {
 //Draw circles
 function circle(centerX, centerY) {
   cx.beginPath();
+  cx.strokeStyle = "#0"
   cx.arc(centerX, centerY, 10, 0, 2*Math.PI);
   cx.fill();
   cx.closePath();
@@ -41,6 +42,8 @@ function circle(centerX, centerY) {
 //Draw line
 function drawLine(intercept, slope) {
   cx.beginPath();
+  cx.strokeStyle = "#68e272";
+  cx.lineWidth = 3;
   cx.moveTo(0, intercept);
   cx.lineTo(900, slope*900+intercept);
   cx.stroke();
@@ -64,7 +67,7 @@ function gradStep(intercept, slope, alpha) {
 };
 
 function doGradDescent() {
-  var alpha = .00001;
+  var alpha = .000001;
   slope = 0;
   intercept = 250;
   drawLine(intercept, slope);

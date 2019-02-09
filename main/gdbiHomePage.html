@@ -16,16 +16,16 @@
 				<div class="topnav">
 					<a href="gdbiHomePage.html" class="selected">Home</a>
 					<a href="about.html">FAQ/About</a>
-					<!-- <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Rick Astley</a>
-					<a href="https://youtu.be/PfYnvDL0Qcw" target="_blank">An F in the chat for Stefan Karl Stefansson</a> -->
-					<!-- dade bad he dont want an f in the chat -->
+					<a href="news.html">News</a>
 				</div>
 
 				<div class="row">
 					<div class="leftcolumn">
 						<h3 class="colHeader">
-							<div id="gamesTab">Games</div>
-							<div id="experimentsTab">Experiments</div>
+							<div class="typeMenu" id="gamesTab">Games</div>
+							<div class="typeMenu" id="wipTab">WIP</div>
+							<div class="typeMenu" id="experimentsTab">Experiments</div>
+							<div class="typeMenu" id="allTab">All</div>
 						</h3>
 
 						<!-- 1st Card - breakout -->
@@ -42,7 +42,7 @@
 						</div>
 
 						<!-- 2nd Card - Anime Roulette -->
-						<div class="gameCard">
+						<div class="wipCard">
 							<h2>Anime Roulette (wip)</h2>
 							<img class="dropdown-arrow" id="arrow-2" src="images/arrow.png" width=4%>
 							<h5>Like Russian Roulette, but with anime, and much, much worse.</h5>
@@ -58,7 +58,7 @@
 					 </div>
 
 						<!-- 3rd Card - WDFD -->
-						<div class="gameCard">
+						<div class="wipCard">
 							<h2>World Domination for Dummies (wip)</h2>
 							<img class="dropdown-arrow" id="arrow-3" src="images/arrow.png" width=4%>
 							<h5>Globally establishing Communism.</h5>
@@ -70,7 +70,7 @@
 						</div>
 
 						<!-- 4th Card - Minesweeper -->
-						<div class="gameCard">
+						<div class="wipCard">
 							<h2>Multiplayer Minesweeper (wip)</h2>
 							<img class="dropdown-arrow" id="arrow-4" src="images/arrow.png"/ width=4%>
 							<h5>Because why not</h5>
@@ -82,7 +82,7 @@
 						</div>
 
 						<!-- 5th Card - Coinflip BR -->
-						<div class="gameCard">
+						<div class="wipCard">
 							<h2>Coinflip Battle Royale (wip)</h2>
 							<img class="dropdown-arrow" id="arrow-5" src="images/arrow.png"/ width=4%>
 							<h5>Up to 100 players betting on a coin flip until one (or none) remains</h5>
@@ -116,40 +116,43 @@
 						</div>
 					</div>
 
+					<!-- Right column -->
+					<div class="rightcolumn" style="overflow-y:scroll; height: 700px;">
+						<a href="news.html"><h3 class="colHeaderR">News</h3></a>
 
-
-					<div class="rightcolumn">
-						<h3 class="colHeaderR">News</h3>
-						<!-- First card -->
 						<div class="cardRight">
-							<h2>Some Text</h2>
-							<img class="dropdown-arrow" id="r-arrow-1" src="images/arrow.png" width=10%>
-							<p> Some More Text</p>
-							<div class="fakeimg" id="Rinfo-1">
-								<p>Image</p>
-							</div>
+							<a href="news.html#gameTypes">
+								<h2>Working game type tabs (Feb 8th, 2019)</h2>
+								<p>Games, WIP, Experiments, All</p>
+							</a>
 						</div>
 
-						<!-- Second card -->
 						<div class="cardRight">
-							<h2>Text</h2>
-							<img class="dropdown-arrow" id="r-arrow-2" src="images/arrow.png" width=10%>
-							<p>yes</p>
-							<div class="fakeimg" id="Rinfo-2">
-								<p>Image</p>
-								<p>Image</p>
-								<p>Image</p>
-							</div>
+							<a href="news.html#experiments">
+								<h2>Add experiments section (Feb 6th, 2019)</h2>
+								<p>Start with linear regression experiment</p>
+							</a>
 						</div>
 
-						<!-- Third card -->
 						<div class="cardRight">
-							<h2>Text</h2>
-							<img class="dropdown-arrow" id="r-arrow-3" src="images/arrow.png" width=10%>
-							<p>Some Text..</p>
-							<div class="fakeimg" id="Rinfo-3">
-								<p>Image</p>
+							<a href="news.html#SCCCpre2">
+								<h2>Second pre-release of SCCC</h2>
+								<p>Working grandfather with 5CPS</p>
+							</a>
+						</div>
+
+						<div class="cardRight">
+							<a href="news.html#SCCCpre1">
+								<h2>First pre-release of Shameless Cookie Clicker Clone</h2>
+								<p>Working autoclickers and basic interface</p>
+							</a>
 							</div>
+
+						<div class="cardRight">
+							<a href="news.html#breakout">
+								<h2>Atari Breakout Finished</h2>
+								<p>A while ago but whatever</p>
+							</a>
 						</div>
 					</div>
 				</div>
