@@ -1,6 +1,6 @@
 # Game Design by Idiots
 
-Some idiots trying to make games.
+### Some idiots trying to make games.
 
 * Main Contributors
   * Airrocket - https://www.github.com/airrocket
