@@ -9,3 +9,4 @@
   * Dadecrafter - https://github.com/Dadecrafter
 * **Tertiary Contributors** - *People with cool ideas and community members*
   * TheYeetMaster - He doesn't have a GH so I might put his discord here 
+
