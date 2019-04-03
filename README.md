@@ -1,6 +1,7 @@
 # Game Design by Idiots
 
-### Some idiots trying to make games.
+## Some idiots trying to make games at http://gdbidiots.com
+
 
 * **Main Contributors** - *The people who actually do the code*
   * Airrocket - https://www.github.com/airrocket
