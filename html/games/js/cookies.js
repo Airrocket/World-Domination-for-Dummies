@@ -28,7 +28,7 @@ $(document).ready(() => {
   function autoCookies() {
     cookies += cps;
     document.getElementById("cookies").innerHTML = cookies;
-    document.getElementById("title").innerHTML = "SCCC: " + cookies + " Cookies";
+    document.getElementById("title").innerHTML = "GCC: " + cookies + " Cookies";
     // console.clear();
     // console.log("\n" + cookies + " Cookies");
     // console.log("CPS: " + cps)
