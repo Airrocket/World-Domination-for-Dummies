@@ -1,5 +1,7 @@
 $(document).ready(() => {
+  var cookies = 0;
   var interval;
+  var clickMultiplier = 1;
   var cps = 0;
   var autoMultiplier = 1;
   var buildings = [0, 0];
@@ -52,10 +54,6 @@ $(document).ready(() => {
       console.log("Transaction failed")
     }
   };
-
-  var cookies = 0;
-  var clickMultiplier = 1;
-
   console.log("hello world!")
 
   //Cookie
