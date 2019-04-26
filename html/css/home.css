@@ -27,7 +27,7 @@ ul {list-style-type: none;}
 .playButton:hover {background-color: #ccc; color: black;}
 .colHeader {display: block; background-color: white; margin: 1.5%; overflow: hidden;}
 .colHeader div {display: block; float: left; padding: 1%; text-decoration: none; border-right: 3px solid grey;}
-.colHeader .userMenu {float: right;}
+/* .colHeader .userMenu {float: right; border-right: none; border-left: 3px solid grey;} */
 .colHeaderR {display: block; background-color: white; margin: 4.8%;}
 @media screen and (max-width: 1000px) {.leftcolumn, .rightcolumn { width: 100%; padding: 0;} .colHeaderR {margin: 1.5%}
   .cardRight {padding: 1.5%; margin: 1.5%}}

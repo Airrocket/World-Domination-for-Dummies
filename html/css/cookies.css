@@ -11,8 +11,8 @@ p {margin: 0;}
 .scoreBoard {float: left; border: 2px solid black; margin: .5%;}
 .scoreHeader {margin: 0;}
 .store {float: right; border: 2px solid black; margin: .5%;}
-.cursor {background: url(../images/cursorIcon.png) no-repeat; background-position: left;}
-.grandpa {background: url(../images/grandpaIcon.png) no-repeat; background-position: left;}
+.cursor {background: url(../images/rollingPinIcon.png) no-repeat; background-position: left;}
+.grandpa {background: url(../images/ovenIcon.png) no-repeat; background-position: left;}
 .credit {font-size: 10px; margin-left: .5%;}
 #storeObject {border-top: 2px solid black;}
 

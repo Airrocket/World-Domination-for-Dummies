@@ -6,6 +6,7 @@ $(document).ready(() => {
   $('.experimentCard').slideUp();
   $('.wipCard').slideUp();
   $('.gameCard').slideDown();
+  // $('#account').animate({width:'toggle'});
   $('#gamesTab').css('background-color', '#e8e8e8');
 
   //Left cards
@@ -15,8 +16,8 @@ $(document).ready(() => {
     $('.wipCard').slideUp();
     $('.gameCard').slideDown();
     $('.typeMenu').css('background-color', 'white')
+    // $('.userMenu').css('background-color', 'white')
     $('#gamesTab').css('background-color', '#e8e8e8');
-    console.log("Games Tab");
   })
 
   $('#wipTab').on('click', () => {
@@ -24,8 +25,8 @@ $(document).ready(() => {
     $('.wipCard').slideDown();
     $('.experimentCard').slideUp();
     $('.typeMenu').css('background-color', 'white')
+    // $('.userMenu').css('background-color', 'white')
     $('#wipTab').css('background-color', '#e8e8e8');
-    console.log("WIP Tab");
   })
 
   $('#experimentsTab').on('click', () => {
@@ -33,8 +34,8 @@ $(document).ready(() => {
     $('.wipCard').slideUp();
     $('.experimentCard').slideDown();
     $('.typeMenu').css('background-color', 'white')
+    // $('.userMenu').css('background-color', 'white')
     $('#experimentsTab').css('background-color', '#e8e8e8');
-    console.log("Experiments Tab");
   })
 
   $('#allTab').on('click', () => {
@@ -42,9 +43,28 @@ $(document).ready(() => {
     $('.wipCard').slideDown();
     $('.experimentCard').slideDown();
     $('.typeMenu').css('background-color', 'white')
+    // $('.userMenu').css('background-color', 'white')
     $('#allTab').css('background-color', '#e8e8e8');
-    console.log("All Tab");
   })
+
+  // $('#logInOut').on('click', () => {
+  //   $('.gameCard').slideUp();
+  //   $('.wipCard').slideUp();
+  //   $('.experimentCard').slideUp();
+  //   $('.typeMenu').css('background-color', 'white')
+  //   $('.userMenu').css('background-color', 'white')
+  //   $('#logInOut').css('background-color', '#e8e8e8');
+  //   $('#account').animate({width:'toggle'});
+  // })
+  //
+  // $('#account').on('click', () => {
+  //   $('.gameCard').slideUp();
+  //   $('.wipCard').slideUp();
+  //   $('.experimentCard').slideUp();
+  //   $('.typeMenu').css('background-color', 'white')
+  //   $('.userMenu').css('background-color', 'white')
+  //   $('#account').css('background-color', '#e8e8e8');
+  // })
 
   //breakout card//
   $('#arrow-1').on('click', () => {

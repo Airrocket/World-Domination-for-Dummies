@@ -28,7 +28,7 @@ $(document).ready(() => {
   function autoCookies() {
     cookies += cps;
     document.getElementById("cookies").innerHTML = cookies;
-    document.getElementById("title").innerHTML = "GCC: " + cookies + " Cookies";
+    document.getElementById("title").innerHTML = "GCG: " + cookies + " Cookies";
     // console.clear();
     // console.log("\n" + cookies + " Cookies");
     // console.log("CPS: " + cps)
@@ -45,7 +45,7 @@ $(document).ready(() => {
       buildingsPrice[buildingID] = Math.ceil(price*1.33);
       document.getElementById("cookies").innerHTML = cookies;
       document.getElementById(buildingID).innerHTML = buildings[buildingID];
-      document.getElementById("title").innerHTML = "SCCC: " + cookies + " Cookies";
+      document.getElementById("title").innerHTML = "GCG: " + cookies + " Cookies";
       document.getElementById("cps").innerHTML = cps;
       document.getElementById(buildingID + "price").innerHTML = buildingsPrice[buildingID];
       writeCookies(buildings, cookies);
@@ -67,7 +67,7 @@ $(document).ready(() => {
     $('#cookie').width(250)
     cookies += clickMultiplier;
     document.getElementById("cookies").innerHTML = cookies;
-    document.getElementById("title").innerHTML = "SCCC: " + cookies + " Cookies";
+    document.getElementById("title").innerHTML = "GCG: " + cookies + " Cookies";
     //console.clear();
     console.log("\n" + cookies + " Cookies");
   })
