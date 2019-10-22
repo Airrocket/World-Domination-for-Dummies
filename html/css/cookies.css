@@ -8,11 +8,13 @@ p {margin: 0;}
 .topnav a.selected {background-color: #e8e8e8; color: black;}
 .center {background-color: grey;}
 #game {text-align: center; background-color: white; border: 7px solid grey; height: 100%}
+.cookie {display: flex; flex-direction: column; justify-content: center; align-items: center;}
 .scoreBoard {float: left; border: 2px solid black; margin: .5%;}
 .scoreHeader {margin: 0;}
 .store {float: right; border: 2px solid black; margin: .5%;}
-.cursor {background: url(../images/rollingPinIcon.png) no-repeat; background-position: left;}
-.grandpa {background: url(../images/ovenIcon.png) no-repeat; background-position: left;}
+.pin {background: url(../images/rollingPinIcon.png) no-repeat; background-position: left; background-color: white;}
+.oven {background: url(../images/ovenIcon.png) no-repeat; background-position: left; background-color: white;}
+.factory {background: url(../images/ovenIcon.png) no-repeat; background-position: left; background-color: white;}
 .credit {font-size: 10px; margin-left: .5%;}
 #storeObject {border-top: 2px solid black;}
 

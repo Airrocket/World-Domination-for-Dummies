@@ -4,9 +4,9 @@ $(document).ready(() => {
   var clickMultiplier = 1;
   var cps = 0;
   var autoMultiplier = 1;
-  var buildings = [0, 0];
-  var buildingsPrice = [15, 111];
-  var buildingCps = [1, 5]
+  var buildings = [0, 0, 0];
+  var buildingsPrice = [15, 111, 1000];
+  var buildingCps = [1, 5, 25]
 
   //Browser cookie writer
   function writeCookies (buildings, cookies) {
@@ -35,6 +35,7 @@ $(document).ready(() => {
     // console.log("auto cookies")
   };
 
+  //buy
   function buy(price, buildingID, buildingAmount) {
     if (cookies >= price) {
       buildingAmount += 1;
@@ -54,7 +55,6 @@ $(document).ready(() => {
       console.log("Transaction failed")
     }
   };
-  console.log("hello world!")
 
   //Cookie
   $('#cookie').mouseover(() => {
@@ -73,14 +73,18 @@ $(document).ready(() => {
   })
 
   //Store
-  $('.cursor').on('click', () => {
-    console.log("Buy cursor")
+  $('.pin').on('click', () => {
+    console.log("Buy pin")
     buy(buildingsPrice[0], '0', buildings[0]);
-  })
-  $('.grandpa').on('click', () => {
-    console.log("Buy grandpa")
+  });
+  $('.oven').on('click', () => {
+    console.log("Buy oven")
     buy(buildingsPrice[1], '1', buildings[1])
-  })
+  });
+  $('.factory').on('click', () => {
+    console.log("Buy factory")
+    buy(buildingsPrice[2], '2', buildings[2])
+  });
 
   readCookies();
   interval = setInterval(autoCookies, 1000);
